@@ -1,0 +1,26 @@
+
+img{
+    width:48px;
+    height:48px;
+    clip-path: circle(50% at 50% 50%);
+}
+
+p{
+    font-weight:300;
+    margin-bottom: 0.2rem;
+}
+
+.profile-info{
+
+    display: inline-block;
+}
+.profile-container{
+    background-color: rgba(31, 47, 88,0.3);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.card-img-container{
+
+    background-color: #3f65c9;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+

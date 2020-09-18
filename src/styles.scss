@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+*{
+
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none;
+}
+
+body{
+
+    background-color: #162447 !important;
+    color:#fff !important;
+}
+.grid-position{
+
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    grid-template-columns: 1fr max-content;
+}
+.grid-center{
+    grid-area: 2 / 1 / 2 / 3;
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    text-align: center;
+}

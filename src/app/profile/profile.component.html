@@ -1,0 +1,27 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-3 p-0">
+            <div class="form-group">
+                <select id="sort" class="form-control" (change)="selectedValue()">
+                    <option>Sort</option>
+                    <option value="oldest">Oldest</option>
+                    <option value="youngest">Youngest</option>
+                </select>
+            </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 grid-position mb-4" *ngFor="let profile of profileList">
+            <div class="profile-container">
+                <div class="card-img-container p-4 grid-center">
+                    <img class="card-img-top" src="{{profile.picture.thumbnail}}" alt="Card image cap">
+                </div>
+                <div id="{{profile.login.uuid}}" class="card-body">
+                    <h5>{{profile.name.first}} {{profile.name.last}}</h5>
+                    <p>{{profile.email}}</p>
+                    <p>{{profile.dob.date | date:'yyyy-MM-dd'}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
